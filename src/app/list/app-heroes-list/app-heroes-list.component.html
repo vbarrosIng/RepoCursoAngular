@@ -1,0 +1,17 @@
+<button (click)="mostrarTable()" class="btn btn-success">Mostrar Tabla</button>
+<button (click)="ocultarTable()" class="btn btn-danger mx-2">Ocultar Tabla</button>
+<table *ngIf="validarTabla" class="table">
+    <thead>
+        <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>Clase</th>
+        </tr>
+    </thead>
+    <tr *ngFor="let alumn of alumno">
+        <td>{{alumn.Nombre}}</td>
+        <td>{{alumn.Edad}}</td>
+        <td>{{alumn.Clase }}</td>
+    </tr>
+
+</table>

@@ -1,0 +1,6 @@
+<ul class="list-group">
+    <li *ngFor="let personaje of PersonajeC; index as i" class="list-group-item"> 
+        {{personaje.name}} - power : {{personaje.power}} 
+        <button (click)="deletePersona(i)" class="btn btn-danger"> Eliminar</button>
+    </li>
+</ul>
