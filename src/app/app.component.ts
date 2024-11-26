@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { IListPruebas } from './interfaces/pruebasInterface';
 
 @Component({
   selector: 'app-root',
@@ -6,19 +7,36 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-   public title: string = 'Mi primera App Web';
-    public counter:number = 0
-    
 
-  incrementar(): void{
+  @Input()
+  
+  public title: string = 'Mi primera App Web';
+  public counter: number = 0;
+
+  public plistPruebas : IListPruebas[] = [
+    {
+      nombre : "victor",
+      correo : "victor@gmail.com"
+    },
+    {
+      nombre : "geidys",
+      correo : "geidys@gmail.com"
+    }
+  ] 
+
+  evenAgregarPer(IListPruebas: IListPruebas):void{
+    this.plistPruebas.push(IListPruebas)
+  }
+
+  incrementar(): void {
     this.counter += 1
   }
 
-  decrecer():void{
+  decrecer(): void {
     this.counter -= 1
   }
 
-  reset():void{
+  reset(): void {
     this.counter = 0
   }
 }

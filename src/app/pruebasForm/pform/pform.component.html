@@ -1,0 +1,11 @@
+<h2>Pruebas Form</h2>
+<form (ngSubmit)="agregarPer()" class="p-4" style="border: 1px solid grey ; border-radius: 10px;">
+    <div class="mb-3">
+        <label></label>
+        <input [(ngModel)]="iListPruebas.nombre" class="form-control" name="nombre" type="text">
+    </div>
+    <div class="mb-3">
+        <input [(ngModel)]="iListPruebas.correo" class="form-control" name="correo" type="email">
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output, output } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { IPersonaje } from '../../dbz/interfacesDbz/personaje.interface';
 
 @Component({

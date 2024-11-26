@@ -21,4 +21,13 @@
  <app-hero></app-hero>
  <app-heroes-list></app-heroes-list> -->
 
- <app-dbz-main-page></app-dbz-main-page>
+<app-dbz-main-page></app-dbz-main-page>
+
+<div class="mt-5 row">
+  <div class="col-md-6">
+    <app-pform (evenAgregarPer) = "evenAgregarPer($event)"></app-pform>
+  </div>
+  <div class="col-md-6">
+    <app-plist [plistPruebas]="plistPruebas"></app-plist>
+  </div>
+</div>
