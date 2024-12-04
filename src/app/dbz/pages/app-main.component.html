@@ -3,12 +3,12 @@
 <div class="row">
     <div class="col">
         <h4 class="text-muted mb-4">Listado</h4>
-        <app-personajes (onDeletePersonaje)="onDeletePersonaje($event)" [PersonajeC] = "PersonajeC"></app-personajes>
+        <app-personajes (onDeletePersonaje)="ServicedbzService.onDeletePersonaje($event)" [PersonajeC] = "ServicedbzService.PersonajeC"></app-personajes>
     </div>
     <div class="col">
 
         <h4 class="mb-4 text-muted">Agregar personaje</h4>
-        <app-form-person (onNewPersonaje)="onNewPersonaje($event)" ></app-form-person>
+        <app-form-person (onNewPersonaje)="ServicedbzService.onNewPersonaje($event)" ></app-form-person>
         
     </div>
 </div>
